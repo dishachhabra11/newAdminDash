@@ -1,0 +1,67 @@
+
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route
+// } from "react-router-dom";
+// import "./App.css";
+// import SideBar from "./components/SideBar";
+// import { useNavigate } from "react-router-dom";
+// import Navbar from "./components/Navbar";
+// import Dashboard from "./components/Dashboard";
+// import ComplaintsTable from "./components/ComplaintsTable";
+// import Login from "./components/Login/Login";
+// import { useEffect,useState } from "react";
+// // import Login from "./components/Login/Login";
+
+// const AuthGuard = ({children}) => {
+  
+//   const { islogin } = Login(); // Use useLogin hook from Login component
+//   const navigate = useNavigate();
+
+//   useEffect(() => {
+//     if (islogin) {
+//       navigate('/');
+//     } else {
+//       navigate('/login');
+//     }
+//   }, [islogin, navigate]);
+
+//   if (!islogin) {
+//     return null;
+//   }
+
+//   return children;
+// }
+
+
+// function App() {
+//   const {logincomponent} = Login();
+//   return (
+//     <Router>
+//       <Routes>
+//         <Route path="/login" element={logincomponent}></Route>
+//         <Route
+//           path="/"
+//           element={
+//         <AuthGuard>
+//             <div className="container-screen" style={{ userSelect: "none" }}>
+//               <SideBar />
+//               <div className="container-fluid">
+//                 <Navbar />
+//                 <Routes>
+//                   <Route path="/" element={<Dashboard />} />
+//                   <Route path="/complaints" element={<ComplaintsTable />} />
+//                 </Routes>
+//               </div>
+//             </div>
+
+//             </AuthGuard>
+//           }
+//         ></Route>
+//       </Routes>
+//     </Router>
+//   );
+// }
+
+// export default App;
