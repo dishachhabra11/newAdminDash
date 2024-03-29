@@ -46,7 +46,7 @@ const Dashboard = () => {
 
   const fetchDataAndPopulateCards = async () => {
     try {
-      const response = await fetch("http://localhost:8080/maps/markers");
+      const response = await fetch("https://newadmindash.onrender.com/maps/markers");
       
       
       if (!response.ok) {

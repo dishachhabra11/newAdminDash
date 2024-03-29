@@ -6,7 +6,7 @@ const ComplaintsTable = () => {
 
   useEffect(() => {
     // Fetch data from the API
-    fetch('http://localhost:8080/maps/complains')
+    fetch('https://newadmindash.onrender.com/maps/complains')
       .then(response => response.json())
       .then(data => setComplaintsData(data))
       .catch(error => console.error('Error fetching data:', error));

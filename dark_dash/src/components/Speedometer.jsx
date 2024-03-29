@@ -9,7 +9,7 @@ const Speedometer = ({ TaxSelected ,wardNumber}) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:8080/maps/markers');
+        const response = await fetch('https://newadmindash.onrender.com/maps/markers');
 
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
