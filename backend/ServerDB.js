@@ -8,7 +8,7 @@ const session = require('express-session');
 const  fetchuser =require ( './middleware/fetchuser');
 const JWT_SECRET="hambharatkeveerhai";
 
-const port = 8080;
+const port =process.env.PORT|| 8080;
 const firestore = admin.firestore();
 
 const bodyParser = require("body-parser");
