@@ -7,7 +7,7 @@ import {
   
   
 } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
+
 import { geojsonData } from './finalsetted';
 import chroma from 'chroma-js';
 
